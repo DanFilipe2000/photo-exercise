@@ -8,6 +8,6 @@ use Illuminate\Support\Facades\Storage;
 class PhotoController extends Controller
 {
     public function store(Request $request) {
-        Storage::put('/public', $request->photo);
+        Storage::put('file.jpg', $request->photo);
     }
 }
